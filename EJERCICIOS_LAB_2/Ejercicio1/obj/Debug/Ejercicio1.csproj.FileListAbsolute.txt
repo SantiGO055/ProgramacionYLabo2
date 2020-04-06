@@ -1,0 +1,14 @@
+C:\Users\ins03\Desktop\Facultad\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+C:\Users\ins03\Desktop\Facultad\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\bin\Debug\Ejercicio1.exe
+C:\Users\ins03\Desktop\Facultad\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\bin\Debug\Ejercicio1.pdb
+C:\Users\ins03\Desktop\Facultad\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\obj\Debug\Ejercicio1.csprojAssemblyReference.cache
+C:\Users\ins03\Desktop\Facultad\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\obj\Debug\Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Users\ins03\Desktop\Facultad\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\obj\Debug\Ejercicio1.exe
+C:\Users\ins03\Desktop\Facultad\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\obj\Debug\Ejercicio1.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\bin\Debug\Ejercicio1.exe
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\bin\Debug\Ejercicio1.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\obj\Debug\Ejercicio1.csprojAssemblyReference.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\obj\Debug\Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\obj\Debug\Ejercicio1.exe
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Ejercicio1\obj\Debug\Ejercicio1.pdb
