@@ -1,0 +1,7 @@
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Repaso\bin\Debug\Repaso.exe.config
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Repaso\bin\Debug\Repaso.exe
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Repaso\bin\Debug\Repaso.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Repaso\obj\Debug\Repaso.csproj.CoreCompileInputs.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Repaso\obj\Debug\Repaso.exe
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Repaso\obj\Debug\Repaso.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\Repaso\obj\Debug\Repaso.csprojAssemblyReference.cache
