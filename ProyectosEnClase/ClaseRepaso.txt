@@ -1,0 +1,19 @@
+1- Crear clases
+
+2- Crear constructores y sobrecargarlos para reutilizar codigo, crear las variables
+
+3- Hacer metodo getters con StringBuilder
+
+4- Hacer metodo setters
+5- Sobrecargar los operadores
+como caracteristica el constructor estatico se ejecuta una sola vez en todo el programa cuando se usa por primera vez esta clase
+
+Metodo estatico:
+clase.metodo se usa el metodo estatico
+en un metodo de instancia tengo que tener el objeto creado.
+
+
+Para validar entre minimo y maximo
+Hacer metodo estatico validar
+minimo maximo
+lo llamo con validar.numero

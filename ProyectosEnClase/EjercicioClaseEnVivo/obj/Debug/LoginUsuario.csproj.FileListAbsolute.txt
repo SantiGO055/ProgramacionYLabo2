@@ -1,0 +1,7 @@
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\EjercicioClaseEnVivo\bin\Debug\EjercicioClaseEnVivo.exe.config
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\EjercicioClaseEnVivo\bin\Debug\EjercicioClaseEnVivo.exe
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\EjercicioClaseEnVivo\bin\Debug\EjercicioClaseEnVivo.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\EjercicioClaseEnVivo\obj\Debug\LoginUsuario.csprojAssemblyReference.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\EjercicioClaseEnVivo\obj\Debug\LoginUsuario.csproj.CoreCompileInputs.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\EjercicioClaseEnVivo\obj\Debug\EjercicioClaseEnVivo.exe
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\EJERCICIOS_LAB_2\EjercicioClaseEnVivo\obj\Debug\EjercicioClaseEnVivo.pdb

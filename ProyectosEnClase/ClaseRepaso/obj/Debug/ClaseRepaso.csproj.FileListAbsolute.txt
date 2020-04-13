@@ -1,0 +1,14 @@
+C:\Users\SantiGO\Desktop\ProgramacionYLabo2-master\ProyectosEnClase\ClaseRepaso\bin\Debug\ClaseRepaso.exe.config
+C:\Users\SantiGO\Desktop\ProgramacionYLabo2-master\ProyectosEnClase\ClaseRepaso\bin\Debug\ClaseRepaso.exe
+C:\Users\SantiGO\Desktop\ProgramacionYLabo2-master\ProyectosEnClase\ClaseRepaso\bin\Debug\ClaseRepaso.pdb
+C:\Users\SantiGO\Desktop\ProgramacionYLabo2-master\ProyectosEnClase\ClaseRepaso\obj\Debug\ClaseRepaso.csprojAssemblyReference.cache
+C:\Users\SantiGO\Desktop\ProgramacionYLabo2-master\ProyectosEnClase\ClaseRepaso\obj\Debug\ClaseRepaso.csproj.CoreCompileInputs.cache
+C:\Users\SantiGO\Desktop\ProgramacionYLabo2-master\ProyectosEnClase\ClaseRepaso\obj\Debug\ClaseRepaso.exe
+C:\Users\SantiGO\Desktop\ProgramacionYLabo2-master\ProyectosEnClase\ClaseRepaso\obj\Debug\ClaseRepaso.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\ClaseRepaso\bin\Debug\ClaseRepaso.exe.config
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\ClaseRepaso\bin\Debug\ClaseRepaso.exe
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\ClaseRepaso\bin\Debug\ClaseRepaso.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\ClaseRepaso\obj\Debug\ClaseRepaso.csprojAssemblyReference.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\ClaseRepaso\obj\Debug\ClaseRepaso.csproj.CoreCompileInputs.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\ClaseRepaso\obj\Debug\ClaseRepaso.exe
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\ClaseRepaso\obj\Debug\ClaseRepaso.pdb
