@@ -1,0 +1,9 @@
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\bin\Debug\netstandard2.0\Pizzeria.deps.json
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\bin\Debug\netstandard2.0\Pizzeria.dll
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\bin\Debug\netstandard2.0\Pizzeria.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\obj\Debug\netstandard2.0\Pizzeria.csprojAssemblyReference.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\obj\Debug\netstandard2.0\Pizzeria.csproj.CoreCompileInputs.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\obj\Debug\netstandard2.0\Pizzeria.AssemblyInfoInputs.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\obj\Debug\netstandard2.0\Pizzeria.AssemblyInfo.cs
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\obj\Debug\netstandard2.0\Pizzeria.dll
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Pizzeria\obj\Debug\netstandard2.0\Pizzeria.pdb
