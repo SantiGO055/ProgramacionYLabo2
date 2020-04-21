@@ -27,7 +27,7 @@ namespace Pizzeria
         }
         public static bool operator !=(Pizza pizzaA, Pizza pizzaB)
         {
-            return !(pizzaA==pizzaB);
+            return !(pizzaA == pizzaB);
         }
 
         public static bool operator +(Pizza pizzaA, Pizza pizzaB)
@@ -39,6 +39,10 @@ namespace Pizzeria
             }
             else
                 return false;
+        }
+        public string mostrar()
+        {
+            return this.gusto + " " + this.tipoCoccion + " " + this.cantidad;
         }
     }
 }

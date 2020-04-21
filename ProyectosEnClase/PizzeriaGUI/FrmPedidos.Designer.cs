@@ -28,32 +28,182 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.lstPedidos = new System.Windows.Forms.ListBox();
+            this.cmbGusto = new System.Windows.Forms.ComboBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.nmuCantidad = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cmbCoccion = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.chkEnvia = new System.Windows.Forms.CheckBox();
+            this.btnPedir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.nmuCantidad)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // lstPedidos
             // 
-            this.button1.Location = new System.Drawing.Point(316, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.lstPedidos.FormattingEnabled = true;
+            this.lstPedidos.Location = new System.Drawing.Point(351, 27);
+            this.lstPedidos.Name = "lstPedidos";
+            this.lstPedidos.Size = new System.Drawing.Size(249, 186);
+            this.lstPedidos.TabIndex = 1;
+            this.lstPedidos.SelectedIndexChanged += new System.EventHandler(this.lstPizzas_SelectedIndexChanged);
+            // 
+            // cmbGusto
+            // 
+            this.cmbGusto.FormattingEnabled = true;
+            this.cmbGusto.Items.AddRange(new object[] {
+            "Muzzarella",
+            "Napolitana",
+            "Jamon y morron",
+            "Calabresa",
+            "Fugazzeta"});
+            this.cmbGusto.Location = new System.Drawing.Point(108, 16);
+            this.cmbGusto.Name = "cmbGusto";
+            this.cmbGusto.Size = new System.Drawing.Size(121, 21);
+            this.cmbGusto.TabIndex = 1;
+            this.cmbGusto.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Location = new System.Drawing.Point(7, 19);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(0, 13);
+            this.lblCliente.TabIndex = 3;
+            this.lblCliente.Click += new System.EventHandler(this.lblCliente_Click);
+            // 
+            // nmuCantidad
+            // 
+            this.nmuCantidad.Location = new System.Drawing.Point(108, 68);
+            this.nmuCantidad.Name = "nmuCantidad";
+            this.nmuCantidad.Size = new System.Drawing.Size(121, 20);
+            this.nmuCantidad.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Gusto";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Cantidad";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Tipo de coccion";
+            // 
+            // cmbCoccion
+            // 
+            this.cmbCoccion.FormattingEnabled = true;
+            this.cmbCoccion.Items.AddRange(new object[] {
+            "Muzzarella",
+            "Napolitana",
+            "Jamon y morron",
+            "Calabresa",
+            "Fugazzeta"});
+            this.cmbCoccion.Location = new System.Drawing.Point(108, 128);
+            this.cmbCoccion.Name = "cmbCoccion";
+            this.cmbCoccion.Size = new System.Drawing.Size(121, 21);
+            this.cmbCoccion.TabIndex = 3;
+            this.cmbCoccion.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnAgregar);
+            this.groupBox1.Controls.Add(this.cmbCoccion);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.nmuCantidad);
+            this.groupBox1.Controls.Add(this.lblCliente);
+            this.groupBox1.Controls.Add(this.cmbGusto);
+            this.groupBox1.Location = new System.Drawing.Point(14, 8);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(307, 205);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(118, 174);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(77, 25);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // chkEnvia
+            // 
+            this.chkEnvia.AutoSize = true;
+            this.chkEnvia.Location = new System.Drawing.Point(24, 262);
+            this.chkEnvia.Name = "chkEnvia";
+            this.chkEnvia.Size = new System.Drawing.Size(105, 17);
+            this.chkEnvia.TabIndex = 5;
+            this.chkEnvia.Text = "Envia a domicilio";
+            this.chkEnvia.UseVisualStyleBackColor = true;
+            // 
+            // btnPedir
+            // 
+            this.btnPedir.Location = new System.Drawing.Point(244, 254);
+            this.btnPedir.Name = "btnPedir";
+            this.btnPedir.Size = new System.Drawing.Size(77, 25);
+            this.btnPedir.TabIndex = 6;
+            this.btnPedir.Text = "Pedir";
+            this.btnPedir.UseVisualStyleBackColor = true;
+            this.btnPedir.Click += new System.EventHandler(this.btnPedir_Click);
             // 
             // FrmPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(661, 291);
+            this.Controls.Add(this.btnPedir);
+            this.Controls.Add(this.chkEnvia);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lstPedidos);
             this.Name = "FrmPedidos";
             this.Text = "Pedidos";
+            this.Load += new System.EventHandler(this.FrmPedidos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nmuCantidad)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox lstPedidos;
+        private System.Windows.Forms.ComboBox cmbGusto;
+        private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.NumericUpDown nmuCantidad;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cmbCoccion;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox chkEnvia;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnPedir;
     }
 }

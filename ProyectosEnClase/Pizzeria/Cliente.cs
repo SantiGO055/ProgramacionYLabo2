@@ -6,9 +6,10 @@ namespace Pizzeria
 {
     public class Cliente
     {
-        private string nombre;
-        private string apellido;
-        private string domicilio;
+        public string nombre;
+        public string apellido;
+        public string domicilio;
+
 
         public Cliente(string nombre)
         {
@@ -22,7 +23,13 @@ namespace Pizzeria
         {
             this.apellido = apellido;
         }
-
+        public string MostrarCliente()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("" + nombre);
+            sb.Append("," + apellido);
+            return sb.ToString();
+        }
 
     }
 }

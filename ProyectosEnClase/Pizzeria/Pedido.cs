@@ -5,9 +5,9 @@ namespace Pizzeria
     public class Pedido
     {
         private bool envia;
-        private DateTime horaIngreso;
-        private DateTime horaRetiro;
-        private Pizza[] pizzas; //coleccion de pizzas
+        public DateTime horaIngreso;
+        public DateTime horaRetiro;
+        public Pizza[] pizzas; //coleccion de pizzas
         private Cliente cliente;
         //agregar 1 cliente solo
 
