@@ -3,11 +3,11 @@ C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\C
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\bin\Debug\Clase6.pdb
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.csprojAssemblyReference.cache
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.Form1.resources
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.Form3.resources
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.FrmCuarto.resources
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.FrmSegundo.resources
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.Properties.Resources.resources
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.csproj.GenerateResource.cache
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.csproj.CoreCompileInputs.cache
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.exe
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.pdb
-C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.Form3.resources
-C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.FrmCuarto.resources
-C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase6\obj\Debug\Clase6.FrmSegundo.resources

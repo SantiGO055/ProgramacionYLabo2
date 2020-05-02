@@ -2,82 +2,119 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
 
-namespace Clase3
+namespace Clase2
 {
     class Program
     {
+        const int LIMITEDERECHA = 80;
+        const int LIMITEABAJO = 20;
+
+        const int DERECHA = 1;
+        const int IZQUIERDA = 2;
+        const int ABAJO = 3;
+        const int ARRIBA = 4;
+
+
         static void Main(string[] args)
         {
-            const int LIMITEDERECHA = 80;
-            const int DERECHA = 6;
-            const int IZQUIERDA = 4;
-            const int ABAJO = 2;
-            const int ARRIBA = 8;
 
-            double numero = 0;
-            Jugador.numeroJugadores = 0;
-            Jugador jugador1 = new Jugador("Aragorn",true); //no va a existir el objeto hasta que el programa corra. Para crearlo va nombre de la clase espacio y nombre del objeto
-            //jugador1.mover(); //jugador 1 tiene metodo mover pero si jugador1 nunca se hizo new no va a tener mover por que no existe
             
-
+            Jugador.numeroJugadores = 0;
+            Jugador[] jugadores = new Jugador[4];
+            
+            //   Jugador jugador2 = new Jugador("Lara", true);
             ConsoleKeyInfo consoleKeyInfo;
+
             #region Hacer Cancha
-            //█ -> ALT + 219
-            for (int i = 1; i < 20; i++)
+
+            //█ --> alt + 219   
+
+            for (int i = 1; i < LIMITEABAJO; i++)
             {
                 Console.CursorLeft = 1;
                 Console.CursorTop = i;
-                Console.WriteLine("█");
-                Console.CursorLeft = 80;
+                Console.Write("█");
+                Console.CursorLeft = LIMITEDERECHA;
                 Console.CursorTop = i;
-                Console.WriteLine("█");
-
+                Console.Write("█");
             }
 
-            for (int i = 1; i < 80; i++)
+            for (int i = 1; i <= LIMITEDERECHA; i++)
             {
                 Console.CursorLeft = i;
                 Console.CursorTop = 1;
-                Console.WriteLine("█");
+                Console.Write("█");
                 Console.CursorLeft = i;
-                Console.CursorTop = 20;
-                Console.WriteLine("█");
-
+                Console.CursorTop = LIMITEABAJO;
+                Console.Write("█");
             }
+
             #endregion
+
+
             do
             {
-                while (!Console.KeyAvailable)
-                {
-                    numero = 0;
-                    switch (consoleKeyInfo.Key)
-                    {
-                        case ConsoleKey.UpArrow:
-                            jugador1.movimiento = ARRIBA;
-                            break;
-                        case ConsoleKey.DownArrow:
-                            jugador1.movimiento = ABAJO;
-                            break;
-                        case ConsoleKey.LeftArrow:
-                            jugador1.movimiento = IZQUIERDA;
-                            break;
-                        case ConsoleKey.RightArrow:
-                            jugador1.movimiento = DERECHA;
-                            break;
-                    }
-
-                    jugador1.mover(consoleKeyInfo);
-                    Thread.Sleep(100);
-                }
 
                 
+                while (!Console.KeyAvailable)
+                {
+                    foreach (Jugador jugador in jugadores)
+                    {
+                        if(jugador != null)
+                            jugador.Mover();
+                    }
+                    //using System.Threading
+                    Thread.Sleep(100);
+
+                }
+                
                 consoleKeyInfo = Console.ReadKey();
-                Console.WriteLine(numero);
+
+                if(consoleKeyInfo.Key == ConsoleKey.N)
+                {
+                    if(Jugador.numeroJugadores < jugadores.Length)
+                    {
+                            jugadores[Jugador.numeroJugadores] = new Jugador("Jugador " + (Jugador.numeroJugadores + 1), false);
+                     
+                    }
+                        
+                }
+
+                foreach (Jugador jugador in jugadores)
+                {
+
+                    #region Movimiento
+                    if (jugador != null)
+                    {
+                        //ctrl +K+d
+                        switch (consoleKeyInfo.Key)
+                        {
+                            case ConsoleKey.UpArrow:
+                                jugador.movimiento = ARRIBA;
+                                break;
+
+                            case ConsoleKey.DownArrow:
+                                jugador.movimiento = ABAJO;
+                                break;
+
+                            case ConsoleKey.LeftArrow:
+                                jugador.movimiento = IZQUIERDA;
+                                break;
+
+                            case ConsoleKey.RightArrow:
+                                jugador.movimiento = DERECHA;
+                                break;
+                        }
+
+                    }
+#endregion
+
+                }
             } while (consoleKeyInfo.KeyChar != 27);
-            
+
+
         }
     }
 }

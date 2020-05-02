@@ -27,7 +27,7 @@ namespace Pizzeria
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("" + nombre);
-            sb.Append("," + apellido);
+            sb.Append(", " + apellido);
             return sb.ToString();
         }
 

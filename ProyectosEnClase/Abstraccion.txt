@@ -1,0 +1,18 @@
+Cuando hago un metodo Mostrar 
+
+
+Mirar serie naftaSuper
+
+abstract puede ser usada para prohibir que pueda ser usada para crear un objeto
+se usa en la clase base para que los demas hereden
+Tambien permise a obligar a sus clases hijas a que implementen metodos:
+public abstract void Frenar(); //ejemplo
+
+En la clase hija overraideo (sobrescribo) el metodo Frenar
+
+Puedo modificar un metodo ya existente para cambiarlo totalmente o agregarle cosas:
+En la clase base donde declaro el metodo lo pongo como virtual
+
+con public override string ToString()
+hace que el metodo string muestre lo mismo de mostrar
+Para usarlo en el program en vez de hacer auto.Mostrar haces auto.ToString()

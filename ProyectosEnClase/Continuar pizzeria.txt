@@ -1,0 +1,12 @@
+pizzeria
+Repasar sobrecarga de constructores!!!!!!
+hacer login para el usuario
+
+antes de ingresar pedir usuario con nombre, apellido y contraseña, permisos, puesto (cajero o call center)
+puesto: enum cajero, call center, cocina(pedidos que van saliendo), delivery (que va enviando)
+
+las cosas que comparta usuario y cliente se abstrae a la clase persona
+
+cuando pasa la pantalla del usuario logueado crea instancia de nombre apellido, nombre usuario
+
+Comparar usuario con un hardcodeo

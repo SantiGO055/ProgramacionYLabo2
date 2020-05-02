@@ -2,40 +2,44 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-
-namespace Clase3
+namespace Clase2
 {
-    
+
     public class Jugador
     {
-        const int DERECHA = 6;
-        const int IZQUIERDA = 4;
-        const int ABAJO = 2;
-        const int ARRIBA = 8;
+        const int LIMITEDERECHA = 80;
+        const int LIMITEABAJO = 20;
+
+
+        const int DERECHA = 1;
+        const int IZQUIERDA = 2;
+        const int ABAJO = 3;
+        const int ARRIBA = 4;
 
 
         public static int numeroJugadores;
         public string nombre;
-        public int vida;
         private int posicionX;
         private int posicionY;
         public int movimiento;
         public bool isAlive;
-        static Jugador() // constructor estatico o de clase. No recibe parametros
+
+
+
+        public int vida;
+
+        static Jugador()
         {
             numeroJugadores = 0;
         }
 
         
-        
-
-        public Jugador(string nombre, bool posicionDerecha) //constructor de instancia primero se hace el this() y despues lo que esta dentro, se usa para ahorrar codigo
+        public Jugador(string nombre,bool posicionDerecha)
         {
             Jugador.numeroJugadores++;
             this.vida = 100;
-            this.nombre = nombre; // es como hardcodear el nombre, cada vez que creo un jugador va a tener ese nombre
+            this.nombre = nombre;
             this.isAlive = true;
             posicionX = 10;
             posicionY = 10;
@@ -45,6 +49,7 @@ namespace Clase3
                 posicionX = 70;
                 movimiento = IZQUIERDA;
             }
+
             pintar();
         }
 
@@ -52,29 +57,56 @@ namespace Clase3
         {
             Console.CursorLeft = posicionX;
             Console.CursorTop = posicionY;
-            Console.WriteLine("█");
+            Console.Write("█");
 
         }
-        public void mover(int movimiento)
+
+        public void Mover()
         {
             Console.CursorLeft = posicionX;
             Console.CursorTop = posicionY;
             Console.Write(" ");
+
             switch (movimiento)
             {
                 case DERECHA:
+                    if(posicionX == LIMITEDERECHA -1)
+                    {
+                        posicionX = 40;
+                        vida--;
+                    }
                     posicionX++;
                     break;
+
                 case IZQUIERDA:
+                    if (posicionX == 1)
+                    {
+                        posicionX = 40;
+                        vida--;
+                    }
                     posicionX--;
                     break;
                 case ARRIBA:
-                    posicionY++;
-                    break;
-                case ABAJO:
+                    if (posicionY == 1)
+                    {
+                        posicionY = 10;
+                        vida--;
+                    }
                     posicionY--;
                     break;
+                case ABAJO:
+                    if (posicionY == LIMITEABAJO - 1)
+                    {
+                        posicionY = 10;
+                        vida--;
+                    }
+                    posicionY   ++;
+                    break;
+
             }
+
+            pintar();
+
         }
     }
 }

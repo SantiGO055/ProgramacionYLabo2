@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstPedidos = new System.Windows.Forms.ListBox();
+            this.lstPedidosPorRealizar = new System.Windows.Forms.ListBox();
             this.cmbGusto = new System.Windows.Forms.ComboBox();
             this.lblCliente = new System.Windows.Forms.Label();
             this.nmuCantidad = new System.Windows.Forms.NumericUpDown();
@@ -40,18 +40,19 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.chkEnvia = new System.Windows.Forms.CheckBox();
             this.btnPedir = new System.Windows.Forms.Button();
+            this.lblClientePedido = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nmuCantidad)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lstPedidos
+            // lstPedidosPorRealizar
             // 
-            this.lstPedidos.FormattingEnabled = true;
-            this.lstPedidos.Location = new System.Drawing.Point(351, 27);
-            this.lstPedidos.Name = "lstPedidos";
-            this.lstPedidos.Size = new System.Drawing.Size(249, 186);
-            this.lstPedidos.TabIndex = 1;
-            this.lstPedidos.SelectedIndexChanged += new System.EventHandler(this.lstPizzas_SelectedIndexChanged);
+            this.lstPedidosPorRealizar.FormattingEnabled = true;
+            this.lstPedidosPorRealizar.Location = new System.Drawing.Point(383, 49);
+            this.lstPedidosPorRealizar.Name = "lstPedidosPorRealizar";
+            this.lstPedidosPorRealizar.Size = new System.Drawing.Size(213, 199);
+            this.lstPedidosPorRealizar.TabIndex = 1;
+            this.lstPedidosPorRealizar.SelectedIndexChanged += new System.EventHandler(this.FrmPedidos_Load);
             // 
             // cmbGusto
             // 
@@ -115,11 +116,8 @@
             // 
             this.cmbCoccion.FormattingEnabled = true;
             this.cmbCoccion.Items.AddRange(new object[] {
-            "Muzzarella",
-            "Napolitana",
-            "Jamon y morron",
-            "Calabresa",
-            "Fugazzeta"});
+            "Al horno",
+            "A la piedra"});
             this.cmbCoccion.Location = new System.Drawing.Point(108, 128);
             this.cmbCoccion.Name = "cmbCoccion";
             this.cmbCoccion.Size = new System.Drawing.Size(121, 21);
@@ -136,7 +134,7 @@
             this.groupBox1.Controls.Add(this.nmuCantidad);
             this.groupBox1.Controls.Add(this.lblCliente);
             this.groupBox1.Controls.Add(this.cmbGusto);
-            this.groupBox1.Location = new System.Drawing.Point(14, 8);
+            this.groupBox1.Location = new System.Drawing.Point(14, 43);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(307, 205);
             this.groupBox1.TabIndex = 8;
@@ -144,7 +142,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(118, 174);
+            this.btnAgregar.Location = new System.Drawing.Point(127, 174);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(77, 25);
             this.btnAgregar.TabIndex = 4;
@@ -155,16 +153,17 @@
             // chkEnvia
             // 
             this.chkEnvia.AutoSize = true;
-            this.chkEnvia.Location = new System.Drawing.Point(24, 262);
+            this.chkEnvia.Location = new System.Drawing.Point(24, 281);
             this.chkEnvia.Name = "chkEnvia";
             this.chkEnvia.Size = new System.Drawing.Size(105, 17);
             this.chkEnvia.TabIndex = 5;
             this.chkEnvia.Text = "Envia a domicilio";
             this.chkEnvia.UseVisualStyleBackColor = true;
+            this.chkEnvia.CheckedChanged += new System.EventHandler(this.chkEnvia_CheckedChanged);
             // 
             // btnPedir
             // 
-            this.btnPedir.Location = new System.Drawing.Point(244, 254);
+            this.btnPedir.Location = new System.Drawing.Point(244, 273);
             this.btnPedir.Name = "btnPedir";
             this.btnPedir.Size = new System.Drawing.Size(77, 25);
             this.btnPedir.TabIndex = 6;
@@ -172,15 +171,26 @@
             this.btnPedir.UseVisualStyleBackColor = true;
             this.btnPedir.Click += new System.EventHandler(this.btnPedir_Click);
             // 
+            // lblClientePedido
+            // 
+            this.lblClientePedido.AutoSize = true;
+            this.lblClientePedido.Location = new System.Drawing.Point(31, 18);
+            this.lblClientePedido.Name = "lblClientePedido";
+            this.lblClientePedido.Size = new System.Drawing.Size(45, 13);
+            this.lblClientePedido.TabIndex = 9;
+            this.lblClientePedido.Text = "Cliente: ";
+            this.lblClientePedido.Click += new System.EventHandler(this.lblClientePedido_Click);
+            // 
             // FrmPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 291);
+            this.ClientSize = new System.Drawing.Size(718, 336);
+            this.Controls.Add(this.lblClientePedido);
             this.Controls.Add(this.btnPedir);
             this.Controls.Add(this.chkEnvia);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lstPedidos);
+            this.Controls.Add(this.lstPedidosPorRealizar);
             this.Name = "FrmPedidos";
             this.Text = "Pedidos";
             this.Load += new System.EventHandler(this.FrmPedidos_Load);
@@ -193,7 +203,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListBox lstPedidos;
+        private System.Windows.Forms.ListBox lstPedidosPorRealizar;
         private System.Windows.Forms.ComboBox cmbGusto;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.NumericUpDown nmuCantidad;
@@ -205,5 +215,6 @@
         private System.Windows.Forms.CheckBox chkEnvia;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnPedir;
+        private System.Windows.Forms.Label lblClientePedido;
     }
 }

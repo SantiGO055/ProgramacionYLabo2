@@ -28,19 +28,23 @@ namespace PizzeriaGUI
         {
             
         }
-        private void ValidarCampos()
+        private bool ValidarCampos()
         {
             if (txtNombre.Text == string.Empty || txtApellido.Text == string.Empty || txtDomicilio.Text == string.Empty)
             {
                 MessageBox.Show("Complete los campos nombre, apellido y domicilio", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
+            return true;
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            this.ValidarCampos();
-            this.cliente = new Cliente(txtNombre.Text,txtApellido.Text,txtDomicilio.Text);
-            this.DialogResult = DialogResult.OK;
+            if (this.ValidarCampos() == true)
+            {
+                this.cliente = new Cliente(txtNombre.Text,txtApellido.Text,txtDomicilio.Text);
+                this.DialogResult = DialogResult.OK;
+            }
             //for de clientes
             //FrmPrincipal.clientes
         }

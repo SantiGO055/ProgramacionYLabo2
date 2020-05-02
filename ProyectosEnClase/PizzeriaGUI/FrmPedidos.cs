@@ -14,27 +14,24 @@ namespace PizzeriaGUI
     public partial class FrmPedidos : Form
     {
         public Pedido pedido;
-        private Cliente cliente;
+        public Cliente cliente;
         public FrmPedidos(Cliente cliente)
         {
             InitializeComponent();
             this.pedido = cliente;
-                        
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Cliente: " +cliente.nombre + " , " + cliente.apellido);
+            lblClientePedido.Text = sb.ToString();
+            
+
         }
 
         private void FrmPedidos_Load(object sender, EventArgs e)
         {
-            FrmClientes frmClientes = new FrmClientes();
-            StringBuilder sb = new StringBuilder();
-            sb.Append(frmClientes.cliente.nombre + " " + frmClientes.cliente.apellido);
-            lblCliente.Text = sb.ToString();
-        }
-
-
-        private void btnAgregarPizzas_Click(object sender, EventArgs e)
-        {
+            //FrmClientes frmClientes = new FrmClientes();
 
         }
+
 
         private void lblCliente_Click(object sender, EventArgs e)
         {
@@ -53,16 +50,45 @@ namespace PizzeriaGUI
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            
-            if(this.pedido + new Pizza(this.nmuCantidad.Value,this.cmbGusto.SelectedItem.ToString(), this.cmbCoccion.SelectedItem.ToString()));
+            if(this.pedido + new Pizza((int)(this.nmuCantidad.Value),this.cmbGusto.SelectedItem.ToString(), this.cmbCoccion.SelectedItem.ToString()))
+            {
+                this.pedido.horaIngreso = DateTime.Now; //
+                
+                MostrarListaDePizzas();
+            }
+
             
         }
-        private void cargarPizzas()
+
+        private void MostrarListaDePizzas()
         {
-            this.lstPedidos.Items.Clear();
+
+            //for (int i = 0; i < this.pedido.pizzas.Length; i++)
+            //{
+            //    StringBuilder sb = new StringBuilder();
+            //    if (!(this.pedido.pizzas is null) && !(this.pedido.pizzas[i] is null))
+            //    {
+            //        lstPedidos.Items.Clear();
+            //        sb.Append(this.pedido.pizzas[i].mostrarPizzas());
+            //        sb.Append(" - " + this.pedido.horaIngreso.ToString("hh:mm:ss"));
+            //        sb.AppendLine("");
+            //    }
+            //    this.lstPedidos.Items.Add(sb.ToString());
+            //}
+
+            lstPedidosPorRealizar.Items.Clear();
             foreach (var item in this.pedido.pizzas)
             {
-                this.lstPedidos.Items.Add(item);
+                StringBuilder sb = new StringBuilder();
+                if (!(pedido.pizzas is null) && !(item is null))
+                {
+                    sb.Append(item.MostrarPizzas());
+                    sb.AppendLine("");
+                    lstPedidosPorRealizar.Items.Add(sb.ToString());
+                    
+                }
+                this.Controls.Add(lstPedidosPorRealizar);
+
             }
         }
 
@@ -70,15 +96,31 @@ namespace PizzeriaGUI
         {
             //el resultado va a ser un objeto pedido cargado
             //new Pedido();
-            this.pedido = cliente;
+
             this.pedido.horaIngreso = DateTime.Now;
-            
+            this.pedido.horaRetiro = DateTime.Now.AddSeconds(10);
+            if (chkEnvia.Checked)
+            {
+                this.pedido.envia = true;
+            }
+            this.DialogResult = DialogResult.OK;
 
         }
+
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblClientePedido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkEnvia_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

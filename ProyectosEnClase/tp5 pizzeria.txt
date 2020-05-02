@@ -1,0 +1,19 @@
+Clase pedido:
+Constructor privado que reciba por parametro cliente y lo asigne al atributo cliente que esta como privado en clase pedido- listo
+
+el operador + recibe una pizza y se va a cargar en el array de pizzas
+
+Hacer sobrecarga de implicit por que no hay perdida de datos cuando se va a castear
+
+operador pizza1 + pizza2 si es la misma pizza sumamos 1 a la cantidad
+si no es igual sumas pizza a array
+pizzas iguales cuando gusto y tipo de coccion son iguales
+
+recorro array de pedidos y si esta la de muzza agrego una mas
+cuando encuentra la de muzza del mismo gusto y coccion agarra el objeto pizza de array suma la cantidad de nuevas muzzas
+
+para reutilizar formulario creo un objeto
+
+
+hacer alta de cliente, nuevo pedido
+se puede elegir cliente y realizar otro pedido

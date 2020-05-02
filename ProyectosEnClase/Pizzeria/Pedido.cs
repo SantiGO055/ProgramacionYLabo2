@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace Pizzeria
 {
     public class Pedido
     {
-        private bool envia;
+        public bool envia;
         public DateTime horaIngreso;
         public DateTime horaRetiro;
         public Pizza[] pizzas; //coleccion de pizzas
@@ -48,13 +51,12 @@ namespace Pizzeria
         }
         public static bool operator +(Pedido pedido, Pizza pizza)
         {
-            bool retorno = false;
             for (int i = 0; i < pedido.pizzas.Length; i++)
             {
                 //buscar en array de pizzas si la pizza que llega existe
-                if(pedido.pizzas[i] + pizza)
+                if (pedido.pizzas[i] + pizza)
                 {
-                    retorno = true;
+                    return true;
                 }
 
             }
@@ -64,11 +66,43 @@ namespace Pizzeria
                 if (pedido.pizzas[i] is null)
                 {
                     pedido.pizzas[i] = pizza;
-                    retorno = true;
+                    return true;
                 }
             }
-            return retorno;
+            return true;
 
+        }
+        public string MostrarPedido()
+        {
+            StringBuilder sb = new StringBuilder();
+            
+            
+            foreach (var item in pizzas)
+            {
+                if (!(item is null))
+                {
+                    sb.Append("Pedido de: " + this.cliente.nombre + ", " + this.cliente.apellido + ", " + this.cliente.domicilio + ": .");
+                    sb.Append(item.MostrarPizzas());
+                    sb.AppendFormat("");
+                    return sb.ToString();
+                }
+                
+            }
+
+
+            return sb.ToString();
+            //for (int i = 0; i < cliente.Count ; i++)
+            //{
+            //    if (!(cliente is null)) //validar si el cliente esigual al pedido
+            //{
+            //    }
+            //}
+            //foreach (var item in pedidos)
+            //{
+            //    sb.Append("Pedido 1: " + item.cliente.nombre + item.cliente.apellido);
+
+            //    return sb.ToString();
+            //}
         }
     }
 }

@@ -1,7 +1,8 @@
-C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\obj\Debug\Clase4.csprojAssemblyReference.cache
-C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\obj\Debug\Clase4.csproj.CoreCompileInputs.cache
-C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\bin\Debug\Clase4.exe.config
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\bin\Debug\Clase4.exe
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\bin\Debug\Clase4.pdb
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\obj\Debug\Clase4.csprojAssemblyReference.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\obj\Debug\Clase4.PrimerForm.resources
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\obj\Debug\Clase4.csproj.GenerateResource.cache
+C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\obj\Debug\Clase4.csproj.CoreCompileInputs.cache
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\obj\Debug\Clase4.exe
 C:\Users\ins03\Desktop\Facultad\PrograYLabo2\ProyectosC#Labo2\ProyectosEnClase\Clase4\obj\Debug\Clase4.pdb

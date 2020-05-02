@@ -19,7 +19,7 @@ namespace Pizzeria
 
         public static bool operator ==(Pizza pizzaA, Pizza pizzaB)
         {
-            if (pizzaA != null)
+            if (!(pizzaA is null))
             {
                 return pizzaA.gusto == pizzaB.gusto && pizzaA.tipoCoccion == pizzaB.tipoCoccion;
             }
@@ -40,9 +40,13 @@ namespace Pizzeria
             else
                 return false;
         }
-        public string mostrar()
+        public string MostrarPizzas()
         {
-            return this.gusto + " " + this.tipoCoccion + " " + this.cantidad;
+            StringBuilder sb = new StringBuilder();
+            sb.Append("" + gusto);
+            sb.Append("," + tipoCoccion);
+            sb.Append("," + cantidad);
+            return sb.ToString();
         }
     }
 }
