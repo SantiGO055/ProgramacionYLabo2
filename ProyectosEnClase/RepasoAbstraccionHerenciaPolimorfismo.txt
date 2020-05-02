@@ -1,0 +1,6 @@
+Abstract sirve de molde para las demas clases, no le doy la posibilidad de crear objetos de esta clase padre. No puede implementar codigo
+
+En el metodo public abstract de la clase padre solo pongo la firma.
+En las demas clases defino el metodo como public override, debe tener misma visibilidad que el padre. Si el metodo es privado lo hereda pero no puede usarse
+
+El metodo virtual me deja darle otra funcionalidad agregando o modificando el codigo que esta implementado, no obliga a hacer el override, puedo o no hacer override en las clases hijas. Si en el main se llama al metodo virtual de una clase y este no esta declarado, buscara el metodo de la clase padre.
