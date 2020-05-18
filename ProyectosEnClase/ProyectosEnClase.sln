@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioRepasoViernes1Mayo", "EjercicioRepasoViernes1Mayo\EjercicioRepasoViernes1Mayo.csproj", "{5CD1B309-3918-4070-816E-E19C178CB6DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcepcionesAlumnito", "Excepciones\ExcepcionesAlumnito.csproj", "{399929B4-0D0B-429B-AD3D-DC8A1969BC9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{5CD1B309-3918-4070-816E-E19C178CB6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CD1B309-3918-4070-816E-E19C178CB6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CD1B309-3918-4070-816E-E19C178CB6DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{399929B4-0D0B-429B-AD3D-DC8A1969BC9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399929B4-0D0B-429B-AD3D-DC8A1969BC9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399929B4-0D0B-429B-AD3D-DC8A1969BC9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399929B4-0D0B-429B-AD3D-DC8A1969BC9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

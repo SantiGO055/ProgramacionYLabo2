@@ -119,11 +119,6 @@ namespace PizzeriaGUI
                     
                 }
             }
-
-
-
-
-
         }
 
         public void EliminarPedidoDeLaCola()

@@ -40,7 +40,7 @@ namespace PizzeriaGUI
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (this.ValidarCampos() == true)
+            if (this.ValidarCampos())
             {
                 this.cliente = new Cliente(txtNombre.Text,txtApellido.Text,txtDomicilio.Text);
                 this.DialogResult = DialogResult.OK;
@@ -56,6 +56,11 @@ namespace PizzeriaGUI
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDomicilio_TextChanged(object sender, EventArgs e)
         {
 
         }

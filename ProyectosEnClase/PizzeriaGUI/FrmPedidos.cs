@@ -63,19 +63,6 @@ namespace PizzeriaGUI
         private void MostrarListaDePizzas()
         {
 
-            //for (int i = 0; i < this.pedido.pizzas.Length; i++)
-            //{
-            //    StringBuilder sb = new StringBuilder();
-            //    if (!(this.pedido.pizzas is null) && !(this.pedido.pizzas[i] is null))
-            //    {
-            //        lstPedidos.Items.Clear();
-            //        sb.Append(this.pedido.pizzas[i].mostrarPizzas());
-            //        sb.Append(" - " + this.pedido.horaIngreso.ToString("hh:mm:ss"));
-            //        sb.AppendLine("");
-            //    }
-            //    this.lstPedidos.Items.Add(sb.ToString());
-            //}
-
             lstPedidosPorRealizar.Items.Clear();
             foreach (var item in this.pedido.pizzas)
             {

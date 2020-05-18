@@ -86,6 +86,7 @@
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(100, 20);
             this.txtDomicilio.TabIndex = 3;
+            this.txtDomicilio.TextChanged += new System.EventHandler(this.txtDomicilio_TextChanged);
             // 
             // lblDomicilio
             // 
