@@ -110,7 +110,11 @@ namespace FormularioLosPichoncitos
             this.listaAdministrativos.Add(administrativo);
 
         }
-        private void crearToolStripMenuItem_Click(object sender, EventArgs e)
+        public void crearToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CrearAlumnosAutomaticamente();
+        }
+        public void CrearAlumnosAutomaticamente()
         {
             this.listaResponsables.Add(new Responsable("Pepe", "Gonzalez", 123654872, false, EParentesco.Padre, "11234568"));
             this.listaAlumnos.Add(new Alumno("Wilie", "Mensler", 569142265, false, 3395, responsable, 753));
@@ -163,8 +167,8 @@ namespace FormularioLosPichoncitos
             this.listaAlumnos.Add(new Alumno("Gertrud", "Lardier", 965787272, true, 9001, responsable, 4343));
             this.listaAlumnos.Add(new Alumno("Kassi", "Kenealy", 046136466, true, 2484, responsable, 4444));
             this.listaAlumnos.Add(new Alumno("Langston", "Skerman", 746234537, true, 3007, responsable, 4545));
-        }
 
+        }
         private void altaAlumnoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmAlta frmAltas = new FrmAlta("responsable");

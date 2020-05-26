@@ -14,6 +14,8 @@ namespace ExcepcionesAlumnito
         {
             int edadAux;
             Alumnito a1 = null;
+
+
             try
             {
                 Console.WriteLine("Ingrese edad: ");
@@ -32,7 +34,6 @@ namespace ExcepcionesAlumnito
 
             finally
             {
-                
                 Console.ReadKey();
             }
             
