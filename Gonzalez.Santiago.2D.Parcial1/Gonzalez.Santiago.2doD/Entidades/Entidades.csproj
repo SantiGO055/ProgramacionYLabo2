@@ -49,6 +49,7 @@
     <Compile Include="EColores.cs" />
     <Compile Include="EParentesco.cs" />
     <Compile Include="ETurno.cs" />
+    <Compile Include="IMensaje.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Personal.cs" />
     <Compile Include="PersonaSinDniException.cs" />

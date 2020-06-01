@@ -13,6 +13,7 @@ namespace Generics
 
             Heroe<string,int> miHeroe = new Heroe<string,int>("Esta llena", 200, ETipoHeroe.Guerrero,"asd");
             Heroe<int,string> miHeroe2 = new Heroe<int, string>(80, "No tiene mana", ETipoHeroe.Guerrero,"asd");
+        
         }
     }
 }

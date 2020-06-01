@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Docente : Personal
+    public class Docente : Personal , IMensaje
     {
         protected double valorHora;
         public Docente(string nombre, string apellido, int dni, bool femenino, DateTime horaEntrada, DateTime horaSalida, double valorHora) : base(nombre, apellido, dni, femenino, horaEntrada, horaSalida)
@@ -39,6 +39,11 @@ namespace Entidades
             sb.AppendLine(base.ToString());
             sb.AppendLine(". Horas Mensuales: " + this.HorasMensuales);
             return sb.ToString();
+        }
+
+        public string MostrarMensaje()
+        {
+            return this.ToString();
         }
     }
 }

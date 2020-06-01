@@ -26,6 +26,7 @@ namespace Generics
             this.cantMana = mana;
             this.tipoHeroe = tipo;
             this.aux = aux;
+
         }
     }
 }

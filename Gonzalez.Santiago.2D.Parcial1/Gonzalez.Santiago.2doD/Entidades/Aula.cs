@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Aula
+    public class Aula : IMensaje
     {
         protected List<Alumno> alumnos;
         protected EColores colorSala;
@@ -89,5 +89,9 @@ namespace Entidades
             return sb.ToString();
         }
 
+        public string MostrarMensaje()
+        {
+            return this.ToString();
+        }
     }
 }
