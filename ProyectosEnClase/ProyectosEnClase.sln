@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcepcionesAlumnito", "Exce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{35116205-C523-4047-A6BC-57C5EAD16CB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchivosDeTexto", "ArchivosDeTexto\ArchivosDeTexto.csproj", "{DFBC8BE6-6887-4D33-AACB-0EED9F8CD879}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{35116205-C523-4047-A6BC-57C5EAD16CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35116205-C523-4047-A6BC-57C5EAD16CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35116205-C523-4047-A6BC-57C5EAD16CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBC8BE6-6887-4D33-AACB-0EED9F8CD879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBC8BE6-6887-4D33-AACB-0EED9F8CD879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBC8BE6-6887-4D33-AACB-0EED9F8CD879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBC8BE6-6887-4D33-AACB-0EED9F8CD879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,6 @@
+Este es el Encabezado para el archivo
+--------------------------
+La fecha es: 2/6/2020 19:48:46
+Este es el archivo modificado
+--------------------------
+La fecha es: 2/6/2020 19:48:46
