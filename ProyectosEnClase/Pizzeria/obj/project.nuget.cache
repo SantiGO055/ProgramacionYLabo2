@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c6sKrvRK1XznsptVTLf1yFeCg6y0jJhLapq+YxSvNb8WjXXhbx7grFxSU5LU9QeYy0G1+UBKY1fCPiClWEO88g==",
+  "dgSpecHash": "dUMQyVXddx/vvUKXj8wT6WDytUVsaiQe6PzyeUq1Z6pLWp7QNVhmY6W88fVb6m7ForY4HxNRUDYeSxxodCtt3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ins03\\Documents\\GitHub\\ProgramacionYLabo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj",
+  "projectFilePath": "C:\\Users\\ins03\\Desktop\\Facultad\\PrograYLabo2\\ProyectosC#Labo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ins03\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\ins03\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
