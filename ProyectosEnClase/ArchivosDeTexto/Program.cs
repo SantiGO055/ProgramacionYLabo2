@@ -11,6 +11,11 @@ namespace ArchivosDeTexto
     {
         static void Main(string[] args)
         {
+            Directory.Exists(@"C:\Users\ins03\Documents\GitHub\ProgramacionYLabo2\ProyectosEnClase\ArchivosDeTexto\pruebita.txt");
+            //Directory.Delete(@"C:\Users\ins03\Documents\GitHub\ProgramacionYLabo2\ProyectosEnClase\ArchivosDeTexto\pruebita.txt");
+
+            string [] arrayDirectorio = Directory.GetFiles(@"C:\Users\ins03\Documents\GitHub\ProgramacionYLabo2\ProyectosEnClase\ArchivosDeTexto\","prueb*.*");
+
 
             using (StreamWriter sw = new StreamWriter(@"C:\Users\ins03\Documents\GitHub\ProgramacionYLabo2\ProyectosEnClase\ArchivosDeTexto\pruebita.txt"))
             {
