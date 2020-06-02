@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Docente : Personal , IMensaje
+    public class Docente : Personal , IMensaje<Docente>
     {
         protected double valorHora;
         public Docente(string nombre, string apellido, int dni, bool femenino, DateTime horaEntrada, DateTime horaSalida, double valorHora) : base(nombre, apellido, dni, femenino, horaEntrada, horaSalida)
@@ -25,6 +25,12 @@ namespace Entidades
         public int HorasMensuales
         {
             get { return (int)(CalcularSalario()); }
+        }
+
+        public Docente AutoReferencia
+        {
+            get { return this; }
+            set { this.dni = value.Dni; }
         }
 
         /*multiplicando el valorHora por la cantidad de horas diarias por 20 días hábiles*/

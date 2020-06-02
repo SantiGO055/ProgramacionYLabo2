@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Aula : IMensaje
+    public class Aula : IMensaje <Aula>
     {
         protected List<Alumno> alumnos;
         protected EColores colorSala;
@@ -53,6 +53,17 @@ namespace Entidades
         {
             get { return this.turno; }
             set { this.turno = value; }
+        }
+
+        public Aula AutoReferencia {
+            get
+            {
+                return this;
+            }
+            set
+            {
+                this.docente = value.docente;
+            }
         }
         #endregion
 

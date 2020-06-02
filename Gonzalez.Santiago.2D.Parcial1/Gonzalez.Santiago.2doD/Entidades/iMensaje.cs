@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public interface IMensaje
+    public interface IMensaje<T>
     {
         /*
         metodos y propiedades
@@ -15,7 +15,11 @@ namespace Entidades
         */
 
         string MostrarMensaje();
-
+        T AutoReferencia
+        {
+            get;
+            set;
+        }
 
     }
 }
