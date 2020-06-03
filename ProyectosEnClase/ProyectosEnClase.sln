@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchivosDeTexto", "Archivos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrmManejoDeArchivos", "ManejoDeArchivos\FrmManejoDeArchivos.csproj", "{C0C69476-995E-47D6-82D4-B40B2481BAB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializacion", "Serializacion\Serializacion.csproj", "{E5FF8F23-D2D0-4615-9B78-51F633B3CBB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{C0C69476-995E-47D6-82D4-B40B2481BAB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0C69476-995E-47D6-82D4-B40B2481BAB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0C69476-995E-47D6-82D4-B40B2481BAB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5FF8F23-D2D0-4615-9B78-51F633B3CBB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5FF8F23-D2D0-4615-9B78-51F633B3CBB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5FF8F23-D2D0-4615-9B78-51F633B3CBB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5FF8F23-D2D0-4615-9B78-51F633B3CBB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
