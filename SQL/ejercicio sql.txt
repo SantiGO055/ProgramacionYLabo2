@@ -1,7 +1,3 @@
-seleccionar todas las provicias
-ver el nombre de las provincias que su segunda letras sea una u
-mostrar todas las localidades y el nombre de la provincia con id 23
-mostrar el nombre de la localidad, nombre de provincia e id de provincia  donde el id de provincia se encuentre entre 10 y 15
 1 - seleccionar todas las provicias
 2 - ver el nombre de las provincias que su segunda letras sea una u
 3 - mostrar todas las localidades y el nombre de la provincia con id 23
