@@ -2,3 +2,7 @@
 2 - ver el nombre de las provincias que su segunda letras sea una u
 3 - mostrar todas las localidades y el nombre de la provincia con id 23
 4 - mostrar el nombre de la localidad, nombre de provincia e id de provincia  donde el id de provincia se encuentre entre 10 y 15
+
+crear la provincia 25 llamada "la boca" 
+modifi  dicha provincia a 'LA BOCA'
+eliminar las provincias mayores a 24 o llamadas la boca
