@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Entidades.Administrativo">
+    <Position X="4.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAQAgAAAAAAAAAAABAAAAAQAAAAA=</HashCode>
+      <FileName>Administrativo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Alumno">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAgAAEAAAIBAAAEAQAABAABAAIAAAAAiA=</HashCode>
+      <FileName>Alumno.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Docente">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQIAGAAAgAAAAAAAAAAAAgAAAAIAAAAA=</HashCode>
+      <FileName>Docente.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="Entidades.Persona">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAABAAQAAACEAAAAgAAAAAAAAAAAACAAAAAgAAA=</HashCode>
+      <FileName>Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Personal">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAEABAAAAAAAEAAAgAAAAAAAAAAIAAAACAAAAAAA=</HashCode>
+      <FileName>Personal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Entidades.Aula">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAGSAAAAAgAEAAAABAAAAAgBAAAIAQ=</HashCode>
+      <FileName>Aula.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Entidades.Responsable">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="Entidades.Persona" FixedFromPoint="true">
+      <Path>
+        <Point X="5.25" Y="0.5" />
+        <Point X="5.25" Y="0.125" />
+        <Point X="2.375" Y="0.125" />
+        <Point X="2.375" Y="4.838" />
+        <Point X="1.25" Y="4.838" />
+        <Point X="1.25" Y="4.463" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAIAEAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Responsable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
