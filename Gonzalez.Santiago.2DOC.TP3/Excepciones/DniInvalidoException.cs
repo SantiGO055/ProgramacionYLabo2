@@ -16,8 +16,12 @@ namespace Excepciones
         {
 
         }
+        public DniInvalidoException(Exception innerException) : base(innerException.Message, innerException)
+        {
 
-        public DniInvalidoException(Exception e, string message) : base(message, e)
+        }
+
+        public DniInvalidoException(string mensaje, Exception innerException) : base(mensaje, innerException)
         {
 
         }

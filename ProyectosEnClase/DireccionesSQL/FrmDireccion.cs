@@ -13,8 +13,8 @@ namespace DireccionesSQL
 {
     public partial class FrmDireccion : Form
     {
-        //las conexiones se realizan en una clase aparte
-        SqlConnection cn;
+        //las conexiones se realizan en una clase aparte estatica para no crear varios objetos de manejador de SQL
+        SqlConnection cn; //server, a que base me conecto y las credenciales
         SqlCommand cm;
         List<KeyValuePair<decimal, string>> provincias;
         List<Localidad> localidades;
@@ -26,7 +26,7 @@ namespace DireccionesSQL
             provincias = new List<KeyValuePair<decimal, string>>();
             cn = new SqlConnection(@"Data Source = LCCTECNMJ669C42\SQLEXPRESS; Initial Catalog = Argentina; Integrated Security = True;");
             localidades = new List<Localidad>();
-            cm = new SqlCommand();
+            cm = new SqlCommand(); //manejar que tipo de consulta hago a la base de datos
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -39,8 +39,8 @@ namespace DireccionesSQL
             {
                 cn.Open();
                 
-                cm.Connection = cn;
-                cm.CommandText = "select * from Provincia";
+                cm.Connection = cn; //asigno al command la conexion creada con la base
+                cm.CommandText = "select * from Provincia"; //paso la consulta a la base
                 SqlDataReader sqlDr = cm.ExecuteReader();
 
                 
@@ -108,7 +108,7 @@ namespace DireccionesSQL
                 cn.Open();
                 cm.Connection = cn;
                 cm.CommandText = "select * from domicilio";
-                SqlDataReader dr = cm.ExecuteReader();
+                SqlDataReader dr = cm.ExecuteReader(); //realizo la consulta y me devuelve objeto tabla con la info de la base
                 DataTable dt = new DataTable();
                 dt.Load(dr);
 
@@ -148,7 +148,7 @@ namespace DireccionesSQL
                 cm.Connection = cn;
                 
                 cm.CommandText = "insert into domicilio (calle, numero, idLocalidad, piso, departamento) values (@calle,@numero,@idLocalidad,@piso,@departamento)";
-                cm.Parameters.Add(new SqlParameter("calle", direcciones.Calle));
+                cm.Parameters.Add(new SqlParameter("calle", direcciones.Calle)); //agrego un parametro pasandole nombre de la variable y el valor
                 cm.Parameters.Add(new SqlParameter("numero", direcciones.Numero));
                 cm.Parameters.Add(new SqlParameter("idLocalidad", direcciones.IDLocalidad));
                 cm.Parameters.Add(new SqlParameter("piso", direcciones.Piso));

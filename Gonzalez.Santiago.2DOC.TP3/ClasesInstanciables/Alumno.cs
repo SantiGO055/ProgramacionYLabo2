@@ -4,36 +4,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Excepciones;
-using Clases.Abstractas;
+using EntidadesAbstractas;
 
 namespace ClasesInstanciables
 {
-    public enum EEstadoCuenta
-    {
-        AlDia,
-        Deudor,
-        Becado
-    }
-    public enum EClase
-    {
-        Programacion,
-        Laboratorio,
-        Contabilidad,
-        SPD
-    }
+    
 
     public sealed class Alumno : Universitario
     {
-        private EClase clasesQueToma;
+        public enum EEstadoCuenta
+        {
+            AlDia,
+            Deudor,
+            Becado
+        }
+
+        private Universidad.EClases clasesQueToma;
         private EEstadoCuenta estadoCuenta;
-        public Alumno(int legajo, string nombre, string apellido, ENacionalidad nacionalidad, int dni, EClase clasesQueToma) :
-            base(legajo,nombre,apellido,nacionalidad,dni)
+
+        #region "Constructores"
+        public Alumno()
+        {
+
+        }
+        public Alumno(int legajo, string nombre, string apellido, string dni, Persona.ENacionalidad nacionalidad, Universidad.EClases clasesQueToma) :
+            base(legajo,nombre,apellido, dni,nacionalidad)
         {
             this.ClasesQueToma = clasesQueToma;
         }
+        
+        public Alumno(int legajo, string nombre, string apellido, string dni, Persona.ENacionalidad nacionalidad, Universidad.EClases clasesQueToma,EEstadoCuenta estadoCuenta) :
+            this(legajo,nombre,apellido, dni, nacionalidad,clasesQueToma)
+        {
+            this.EstadoCuenta = estadoCuenta;
+        }
+        #endregion
+
+        public EEstadoCuenta EstadoCuenta
+        {
+            get { return this.estadoCuenta; }
+            set { this.estadoCuenta = value; }
+        }
 
 
-        public EClase ClasesQueToma
+        public Universidad.EClases ClasesQueToma
         {
             get { return this.clasesQueToma; }
             set { this.clasesQueToma = value; }
@@ -42,23 +56,32 @@ namespace ClasesInstanciables
         protected override string ParticiparEnClase()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("TOMA CLASE DE: " + ClasesQueToma);
+            sb.AppendLine("TOMA CLASE DE: " + this.ClasesQueToma);
             return sb.ToString();
         }
 
-        public override string MostrarDatos()
+        protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append(this.ToString());
+            sb.AppendLine(base.MostrarDatos());
+            sb.AppendLine("ESTADO DE LA CUENTA: " + this.estadoCuenta);
+            sb.AppendLine(this.ParticiparEnClase());
             return sb.ToString();
         }
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("ESTADO DE CUENTA: " + estadoCuenta);
-            sb.AppendLine(this.ParticiparEnClase());
-            return sb.ToString();
+            
+            return this.MostrarDatos();
+        }
+
+        public static bool operator ==(Alumno alumno, Universidad.EClases clase)
+        {
+            return alumno.clasesQueToma.Equals(clase) && !(alumno.estadoCuenta.Equals(EEstadoCuenta.Deudor));
+        }
+        public static bool operator !=(Alumno alumno, Universidad.EClases clase)
+        {
+            return !(alumno == clase);
         }
 
     }

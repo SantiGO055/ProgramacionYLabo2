@@ -27,13 +27,7 @@ namespace Entidades
         public int Dni
         {
             get { return this.dni; }
-            set {
-                if (value < 1000000)
-                {
-                    throw new Exception("La persona no posee un dni correcto");
-                }
-                this.dni = value; 
-            }
+            set { this.dni = value; }
         }
         public bool Femenino
         {
