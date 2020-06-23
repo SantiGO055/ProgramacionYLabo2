@@ -72,6 +72,7 @@
             this.toolStripStatus.Name = "toolStripStatus";
             this.toolStripStatus.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatus.Text = "toolStripStatusLabel1";
+            this.toolStripStatus.Click += new System.EventHandler(this.toolStripStatus_Click);
             // 
             // btnGuardarTxt
             // 
@@ -81,6 +82,7 @@
             this.btnGuardarTxt.TabIndex = 3;
             this.btnGuardarTxt.Text = "Guardar Mensaje";
             this.btnGuardarTxt.UseVisualStyleBackColor = true;
+            this.btnGuardarTxt.Click += new System.EventHandler(this.btnGuardarTxt_Click);
             // 
             // Form1
             // 

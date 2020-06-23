@@ -17,7 +17,7 @@ namespace Hilos
     {
 
         Thread t;
-        Thread toolStrip;
+        Thread toolStripThread;
         SqlConnection miConexion; //server, a que base me conecto y las credenciales
         SqlCommand miComando;
         List<string> notificaciones;
@@ -26,7 +26,7 @@ namespace Hilos
         {
             InitializeComponent();
             t = new Thread(new ParameterizedThreadStart(MostrarTiempo)); //se utiliza para indicarle al thread que se pasa un parametro
-            toolStrip = new Thread(LlenarToolStripStatus);
+            toolStripThread = new Thread(LlenarToolStripStatus);
             miConexion = new SqlConnection(@"Data Source = LCCTECNMJ669C42\SQLEXPRESS; Initial Catalog = Hilos; Integrated Security = True;");
             miComando = new SqlCommand();
             notificaciones = new List<string>();
@@ -34,6 +34,7 @@ namespace Hilos
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             try
             {
                 miConexion.Open();
@@ -45,14 +46,9 @@ namespace Hilos
 
                 while (sqlDr.Read())
                 {
-                    //MessageBox.Show(sqlDr[0].ToString());
-                    //MessageBox.Show(sqlDr[1].ToString());
-
-
                     notificaciones.Add(sqlDr[1].ToString());
-                    //provincias.Add(new KeyValuePair<decimal, string>(decimal.Parse(sqlDr[0].ToString()), sqlDr[1].ToString()));
-
                 }
+                toolStripThread.Start();
 
             }
             catch (Exception ex)
@@ -67,42 +63,49 @@ namespace Hilos
 
         private void LlenarToolStripStatus()
         {
-            foreach (var item in notificaciones)
+
+            while (notificaciones.Count == 6)
             {
-                while (true)
+                foreach (var item in notificaciones)
                 {
                     this.toolStripStatus.Text = item;
                     Thread.Sleep(5000);
                 }
             }
-            
         }
 
         private void MostrarTiempo(object utcObj) //debera si o si retornar void y recibir un objeto
         {
             int utc = (int)utcObj; //casteo objeto a int
-            if (lblTiempo.InvokeRequired)
+            while (true)
             {
-                lblTiempo.BeginInvoke((MethodInvoker)delegate ()
+                if (lblTiempo.InvokeRequired) // verifico si el objeto que viene por parametro viene de otro hilo y hace falta invocarlo
+                {
+                    lblTiempo.BeginInvoke((MethodInvoker)delegate ()
+                    {
+                        lblTiempo.Text = DateTime.UtcNow.AddHours(utc).ToString("hh:MM:ss");
+                    });
+                }
+                else
                 {
                     lblTiempo.Text = DateTime.UtcNow.AddHours(utc).ToString("hh:MM:ss");
-                });
+                }
+                Thread.Sleep(1000);
             }
-            else
-            {               
-                lblTiempo.Text = DateTime.UtcNow.AddHours(utc).ToString("hh:MM:ss");
-            }
-            Thread.Sleep(1000);
         }
 
 
-        private void GuardarTexto(string datos)
+        private void GuardarTexto(List<string> datos) // recibo la lista si quiero guardar toda la lista al txt, sino recibo el string del status strip
         {
             try
             {
                 using (StreamWriter file = new StreamWriter(Environment.CurrentDirectory + "\\Mensaje.txt"))
                 {
-                    file.WriteLine(datos);
+                    foreach (var item in datos) //foreach de la lista
+                    {
+                        
+                        file.WriteLine(item);
+                    }
                 }
             }
             catch (Exception ex)
@@ -112,14 +115,28 @@ namespace Hilos
         }
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            t.Start(-3); //le paso el parametro en el start
-            toolStrip.Start();
+            if (!(t.IsAlive))
+            {
+                t.Start(-3); //le paso el parametro en el start
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (t.IsAlive)
                 t.Abort();
+            if (toolStripThread.IsAlive)
+                toolStripThread.Abort();
+        }
+
+        private void btnGuardarTxt_Click(object sender, EventArgs e)
+        {
+            GuardarTexto(notificaciones);
+        }
+
+        private void toolStripStatus_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
