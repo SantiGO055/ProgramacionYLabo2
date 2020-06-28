@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Delegados
 {
-    public delegate void EnCero(object sender);
+    public delegate void EnCero(object sender); //el delegado va a aceptar toda funcion que reciba un objeto y no devuelva nada
     public class Numero
     {
         //public event EnCero

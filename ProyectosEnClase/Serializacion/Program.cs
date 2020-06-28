@@ -34,7 +34,7 @@ namespace Serializacion
 
                 }
 
-
+                //al deserializar debera ser el mismo nombre de la entidad del xml al del objeto a deserializar
 
                 Dato aux;
                 using (XmlTextReader reader = new XmlTextReader(FILE_NAME))

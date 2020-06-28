@@ -70,6 +70,7 @@
     <Compile Include="FrmRecibe.Designer.cs">
       <DependentUpon>FrmRecibe.cs</DependentUpon>
     </Compile>
+    <Compile Include="MetodoExtension.cs" />
     <Compile Include="Numero.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
