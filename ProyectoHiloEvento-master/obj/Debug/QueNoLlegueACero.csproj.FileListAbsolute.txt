@@ -1,0 +1,10 @@
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\bin\Debug\QueNoLlegueACero.exe
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\bin\Debug\QueNoLlegueACero.pdb
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\obj\Debug\QueNoLlegueACero.csprojResolveAssemblyReference.cache
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\obj\Debug\QueNoLlegueACero.FrmPrincipal.resources
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\obj\Debug\QueNoLlegueACero.Properties.Resources.resources
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\obj\Debug\QueNoLlegueACero.UserControl1.resources
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\obj\Debug\QueNoLlegueACero.csproj.GenerateResource.Cache
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\obj\Debug\QueNoLlegueACero.csproj.CoreCompileInputs.cache
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\obj\Debug\QueNoLlegueACero.exe
+C:\Users\Paola\Desktop\Hilos-master (1)\Hilos-master\QueNoLlegueACero\obj\Debug\QueNoLlegueACero.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ins03\\Desktop\\Facultad\\PrograYLabo2\\ProyectosC#Labo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj": {}
+    "C:\\Users\\ins03\\Documents\\GitHub\\ProgramacionYLabo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ins03\\Desktop\\Facultad\\PrograYLabo2\\ProyectosC#Labo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj": {
+    "C:\\Users\\ins03\\Documents\\GitHub\\ProgramacionYLabo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ins03\\Desktop\\Facultad\\PrograYLabo2\\ProyectosC#Labo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj",
+        "projectUniqueName": "C:\\Users\\ins03\\Documents\\GitHub\\ProgramacionYLabo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj",
         "projectName": "Pizzeria",
-        "projectPath": "C:\\Users\\ins03\\Desktop\\Facultad\\PrograYLabo2\\ProyectosC#Labo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj",
+        "projectPath": "C:\\Users\\ins03\\Documents\\GitHub\\ProgramacionYLabo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj",
         "packagesPath": "C:\\Users\\ins03\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ins03\\Desktop\\Facultad\\PrograYLabo2\\ProyectosC#Labo2\\ProyectosEnClase\\Pizzeria\\obj\\",
+        "outputPath": "C:\\Users\\ins03\\Documents\\GitHub\\ProgramacionYLabo2\\ProyectosEnClase\\Pizzeria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
