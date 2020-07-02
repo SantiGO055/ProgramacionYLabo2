@@ -43,12 +43,14 @@ namespace Serializacion
 
                     aux = (Dato)ser.Deserialize(reader);
 
-                    Console.Write(aux.ToString());
+                    Console.Write(aux.edad);
+                    Console.Write(aux.nombre);
+                    Console.ReadKey();
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                //atrapar la excepcion
+                Console.WriteLine(ex.Message);
             }
 
         }

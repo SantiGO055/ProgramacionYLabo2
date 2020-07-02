@@ -11,6 +11,10 @@ namespace Serializacion
         public string nombre;
         public int edad;
 
+        public Dato()
+        {
+
+        }
         public Dato(string nombre, int edad)
         {
             this.nombre = nombre;

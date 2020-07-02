@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace DelegadosYEventos
 {
-    public delegate string SinCombustible(string combustible);
+    public delegate int SinCombustible(int combustible);
     public class Automovil
     {
         private int litro;
         private int kilometraje;
         private int autonomia;
-
+        private SinCombustible sinCombust;
         //public event SinCombustible SinCombustible;
         SinCombustible sinCombuu;
         public Automovil()
         {
-            sinCombuu = new SinCombustible(SinCombustiblee);
+
         }
 
         public Automovil(int litro, int kilometraje) : this()
@@ -25,6 +25,7 @@ namespace DelegadosYEventos
             this.Litro = litro;
             this.Kilometraje = kilometraje;
         }
+        #region propiedades
         public int Litro
         {
             get { return litro; }
@@ -44,6 +45,13 @@ namespace DelegadosYEventos
             set { autonomia = value; }
         }
 
+        public void SinCombustibleDelegadoAsigno(SinCombustible sinCombu)
+        {
+            sinCombust = sinCombu;
+        }
+
+        
+
         public int Cargar
         {
             get { return Litro; }
@@ -55,6 +63,7 @@ namespace DelegadosYEventos
                 }
             }
         }
+        #endregion
 
         public void Andar(int kilometro)
         {
@@ -63,26 +72,47 @@ namespace DelegadosYEventos
                 kilometro--;
                 Kilometraje++;
                 Litro--;
-                Console.WriteLine(sinCombuu.Invoke("Queda poca nastaa"));
-                Console.WriteLine(sinCombuu.Invoke("Te quedaste sin naftovich amigo"));
+                if (Litro == 0)
+                {
+
+                    sinCombust(Litro);
+                    Console.WriteLine("Te quedaste sin naftovich yo te aviseee"); //acciono el evento
+                }
+                EnciendeReserva();
+                
             }
         }
-        public void EnciendeReserva(string mensajeReserva)
+        public void EnciendeReserva()
         {
             if (Litro < 10)
             {
-                Console.WriteLine("Queda poca nasta amigo! Cargale un poco no seas rata...");
+                Console.WriteLine("Desea cargar nafta? Y or N");
+                if (Console.ReadLine() == "Y")
+                {
+                    CargarNafta();
+                }
+                else
+                {
+                    Console.WriteLine("Queda poca nasta amigo! Cargale un poco no seas rata...");
+                }
+                
             }
         }
-        public string SinCombustiblee(string mensajeSinCombustible)
+        public int SinCombustiblee(int combust)
         {
             if (Litro == 0)
             {
-                return mensajeSinCombustible;
+                return combust;
             }
-            return "Avanzando por km";
+            return 123;
         }
-
+        public void CargarNafta()
+        {
+            int litrosACargar = 0;
+            Console.WriteLine("Ingrese la cantidad de litros que desea cargar");
+            Console.ReadLine();
+            Cargar = litrosACargar;
+        }
 
     }
 }
