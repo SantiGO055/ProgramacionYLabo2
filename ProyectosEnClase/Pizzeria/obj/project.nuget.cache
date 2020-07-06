@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pIINDzenLeAGN181Au1RT7lQPiA5Pv/H9woiKbHGN4F/mslsYSwJMadW6KBBQpufRdIhG9aB0gYThn68idY7pw==",
+  "dgSpecHash": "u7bTMxMyOgXW+OHybDndb9u7R6eG54gS48PCUR0JUvTsKGAn48Y4icXe1fSWH9bXBlOUuvqy991weelkNWTUGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ins03\\Documents\\GitHub\\ProgramacionYLabo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj",
+  "projectFilePath": "C:\\Users\\SantiGO\\Desktop\\Github\\ProgramacionYLabo2\\ProyectosEnClase\\Pizzeria\\Pizzeria.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ins03\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\ins03\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\SantiGO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\SantiGO\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }
