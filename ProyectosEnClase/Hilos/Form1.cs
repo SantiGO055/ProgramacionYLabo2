@@ -27,7 +27,7 @@ namespace Hilos
             InitializeComponent();
             t = new Thread(new ParameterizedThreadStart(MostrarTiempo)); //se utiliza para indicarle al thread que se pasa un parametro
             toolStripThread = new Thread(LlenarToolStripStatus);
-            miConexion = new SqlConnection(@"Data Source = .\SQLEXPRESS; Initial Catalog = Hilos; Integrated Security = True;");
+            miConexion = new SqlConnection(@"Data Source = LCCTECNMJ669C42\SQLEXPRESS; Initial Catalog = Hilos; Integrated Security = True;");
             miComando = new SqlCommand();
             notificaciones = new List<string>();
         }
@@ -46,7 +46,7 @@ namespace Hilos
 
                 while (sqlDr.Read())
                 {
-                    notificaciones.Add(sqlDr[0].ToString());
+                    notificaciones.Add(sqlDr[1].ToString());
                 }
                 toolStripThread.Start();
 
@@ -64,7 +64,7 @@ namespace Hilos
         private void LlenarToolStripStatus()
         {
 
-            while (notificaciones.Count == 2)
+            while (notificaciones.Count == 6)
             {
                 foreach (var item in notificaciones)
                 {

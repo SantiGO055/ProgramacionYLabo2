@@ -43,10 +43,18 @@ namespace DireccionesSQL
                 cm.CommandText = "select * from Provincia"; //paso la consulta a la base
                 SqlDataReader sqlDr = cm.ExecuteReader();
 
+                
                 while (sqlDr.Read())
                 {
+                    //MessageBox.Show(sqlDr[0].ToString());
+                    //MessageBox.Show(sqlDr[1].ToString());
+
+
+                    //provincias.Add((decimal)sqlDr[0],sqlDr[1].ToString());
                     provincias.Add(new KeyValuePair<decimal, string>(decimal.Parse(sqlDr[0].ToString()), sqlDr[1].ToString()));
+
                 }
+                
             }
             catch (Exception ex)
             {
@@ -58,6 +66,8 @@ namespace DireccionesSQL
             }
             cmbIDProvincia.DataSource = provincias;
         }
+
+
 
         private void cmbIDProvincia_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -73,6 +83,8 @@ namespace DireccionesSQL
                 {
                     localidades.Add(new Localidad((decimal)dr[0], (decimal)dr[1], dr[2].ToString()));
                 }
+                //
+                
             }
             catch (Exception ex)
             {
